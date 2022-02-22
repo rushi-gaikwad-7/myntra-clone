@@ -23,7 +23,6 @@
     padding: 0px 50px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-weight: bold;
-
 }
 #mainlogo{
     width: 60px;
@@ -185,21 +184,24 @@ h1{
 
 #footer{
     background-color: #f7f7f7;
+    margin:auto;
+    margin-top: 40px;
+    padding-top:80px;
 }
 
 #mainDiv {
-    width: 80%;
-    margin: auto;
+    width:80%;
     display: grid;
-    padding: 20px 20px;
+    margin: auto;
     background-color: #f7f7f7;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,auto);
     grid-template-rows: auto;
+    
+    line-height:1;
     grid-template-areas:
         "D E F G"
         "H H H H";
 }
-
 #d {
     grid-area: D;
 }
@@ -210,36 +212,37 @@ h1{
 
 #f {
     grid-area: F;
+    padding-left: 20px;
 }
 
 #g {
     grid-area: G;
 }
-#mainDiv{
-    padding-top: 100px;
-}
-#footer>div>p:first-child {
+
+#mainDiv>div>p:first-child {
     font-weight: bold;
+    font-size: 14px;
 }
-#footer>div{
-    margin-left: 50px;
-}
-#lastlogos{
+
+#socialicon{
     display: flex;
-    width: 30%;
-    height: 50px;
-    align-items: center;
-   margin-top: -10px;
-    justify-content: space-around;
+    width:40%;
+   justify-content: space-between;
 }
-#lastlogos>p{
-    font-size: 15px;
-    text-decoration: underline;
+#playstore>img{
+    width: 150px;
+    padding-right:10px;
+}
+#subDiv{
+    width:55%;
 }
 .subdiv{
     display: flex;
+    justify-content: space-evenly;
 
 }
 .subdiv>img{
+    padding:15px;
     width: 50px;
+    height: 50px;
 }
