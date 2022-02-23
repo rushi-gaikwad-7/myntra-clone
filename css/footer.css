@@ -1,0 +1,114 @@
+#footer{
+    background-color: #f7f7f7;
+    margin:auto;
+    margin-top: 40px;
+    padding-top:80px;
+}
+
+#mainDiv {
+    width:80%;
+    display: grid;
+    margin: auto;
+    background-color: #f7f7f7;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: auto;
+    
+    line-height:1;
+    grid-template-areas:
+        "D E F G"
+        "H H H H";
+}
+#d {
+    grid-area: D;
+}
+
+#e {
+    grid-area: E;
+}
+
+#f {
+    grid-area: F;
+    padding-left: 20px;
+}
+
+#g {
+    grid-area: G;
+}
+
+#mainDiv>div>p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#socialicon{
+    display: flex;
+    width:40%;
+   justify-content: space-between;
+}
+#playstore>img{
+    width: 150px;
+    padding-right:10px;
+}
+#subDiv{
+    width:55%;
+}
+.subdiv{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.subdiv>img{
+    padding:15px;
+    width: 50px;
+    height: 50px;
+}
+#pline{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+#pline>div{
+    width:85%;
+    margin-left: 1%;
+    height: 0.05px;
+    border-top: 0.001px dashed;
+}
+#pDiv{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+#pDiv>p{
+    color: #696b79;
+    font-size: 15px;
+    line-height: 25px;
+}
+p>b{
+    color:#6b8fe0;
+}
+#pterm{
+    display: flex;
+    justify-content: space-between;
+}
+#address{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+#address>div{
+    width: 30%;
+    color: #696b79;
+    font-size: 15px;
+}
+#address>div+div{
+    margin-top:90px;
+}
+#discrp1{
+    color: #696b79;
+    font-size: 15px;
+    width:80%;
+    margin: auto;
+}
