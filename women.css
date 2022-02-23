@@ -1,0 +1,30 @@
+#parent{
+    display: flex;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+}
+#filter{
+    width:252px;
+
+}
+#filter>div{
+    display: grid;
+    width:252px;
+    padding: 20px 0px 15px 25px;
+}
+
+#filter>div>div{
+    display: grid;
+}
+
+.navbar{
+    display: flex;
+}
+.priceDiv{
+    display: flex;
+    justify-content: space-around;
+}

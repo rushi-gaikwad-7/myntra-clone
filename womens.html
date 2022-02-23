@@ -5,75 +5,47 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<style>
-    #parent{
-        display: flex;
-    }
-    
-    #products{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: auto;
-    }
-    #filter>div{
-        display: grid;
-    }
-    #filter>div>div{
-        display: grid;
-    }
-    #filter-1{
-        display: flex;
-    }
-    .navbar{
-        display: flex;
-    }
-    .priceDiv{
-        display: flex;
-        justify-content: space-around;
-    }
-</style>
+<link rel="stylesheet" href="women.css" />
 </head>
 <body>
     <div id="parent">
     <div id="filter" >
-        <div id="filter-1" style="display: flex;justify-content: space-around;">
-            <div>FILTER</div>
-            <div>CLEAR ALL</div>
-        </div>
-        <div >
-            <label><input type="radio" value="men">Men</label>
-            <label><input type="radio" value="women">Women</label>
-            <label><input type="radio" value="boys">Boys</label>
-            <label><input type="radio" value="girls">girls</label>
-        </div>
+        
         <div id="categories">
             <div>CATEGORIES</div>
             <div>
-                <label><input type="checkbox" value="kurta"/>Kurta Set</label>
-                <label><input type="checkbox" value="dresses"/>Dresses</label>
-                <label><input type="checkbox" value="heels"/>Heels</label>
-                <label><input type="checkbox" value="sarees"/>Sarees</label>
-                <label><input type="checkbox" value="acesories"/>Acesories</label>
-                <label><input type="checkbox" value="soprtWear"/>Sport</label>
+                <label><input  onchange="kurta()" id="kurta" type="checkbox" value="kurta"/>Kurta Set</label>
+                <label><input  onchange="dress()" id="dress" type="checkbox" value="dress"/>Dresses</label>
+                <label><input onchange="jeans()" id="jeans" type="checkbox" value="jeans">Jeans</label>
+                <label><input onchange="watch()" id="watch" type="checkbox" value="watch">Watches</label>
+                <label><input  onchange="footwear()" id="footwear" type="checkbox" value="footwear"/>Footwear</label>
+                <label><input  onchange="saree()" id="saree" type="checkbox" value="saree"/>Sarees</label>
+                <label><input  onchange="electronics()" id="electronics" type="checkbox" value="electronics"/>electronics</label>
+                <label><input  onchange="makeup()" id="makeup" type="checkbox" value="makeup"/>Makeup</label>
             </div>
         </div>
         <div id="brands">
             <div>Brands</div>
             <div>
-                <label><input type="checkbox" value="adidas"/>ADIDAS </label>
-                <label><input type="checkbox" value="elle"/>ELLE </label>
-                <label><input type="checkbox" value="dreamscape"/>dreamscape </label>
-                <label> <input type="checkbox" value="dreamscape"/>dreamscape</label>
-                <label> <input type="checkbox" value="dreamscape"/>dreamscape</label>
+                <label><input onchange="libas()" id="libas" type="checkbox" value="libas"/>Libas</label>
+                <label><input onchange="biba()" id="biba" type="checkbox" value="Biba"/>Biba</label>
+                <label><input onchange="nike()" id="nike" type="checkbox" value="Nike"/>Nike</label>
+                <label> <input onchange="lakme()" id="lakme" type="checkbox" value="Lakme"/>Lakme</label>
+                <label> <input onchange="kalini()" id="kalini" type="checkbox" value="Kalini"/>Kalini</label>
+                <label> <input onchange="fastrack()" id="fastrack" type="checkbox" value="Fastrack"/>Fastrack</label>
+                <label> <input onchange="philips()" id="philips" type="checkbox" value="philips"/>Philips</label>
+                <label> <input onchange="daniel_clein()" id="daniel_clein" type="checkbox" value="Daniel Klein"/>Daniel Klein</label>
+                <label> <input onchange="puma()" id="puma" type="checkbox" value="Puma"/>Puma</label>
+                <label> <input onchange="apple()" id="apple" type="checkbox" value="Apple"/>Apple</label>
             </div>
         </div>
         <div id="price">
             <div>Price</div>
             <div>
-                <label> <input type="checkbox" value="Rs74toRs3181"/>Rs. 74 to Rs. 3181</label>
-                <label> <input type="checkbox" value="Rs3181toRs6288"/>Rs. 3181 to Rs. 6288</label>
-                <label> <input type="checkbox" value="Rs6288toRs9395"/>Rs. 6288 to Rs. 9395</label>
-                <label> <input type="checkbox" value="Rs9395toRs12502"/>Rs. 9395 to Rs. 12502</label>
+                <label> <input onchange="Rs74toRs3181()" id="Rs74toRs3181" type="checkbox" value="Rs74toRs3181"/>Rs. 74 to Rs. 1199</label>
+                <label> <input onchange="Rs1199toRs2098()" id="Rs1199toRs2098" type="checkbox" value="Rs1199toRs2098"/>Rs. 1199 to Rs. 2098</label>
+                <label> <input onchange="Rs2098toRs3119()" id="Rs2098toRs3119" type="checkbox" value="Rs2098toRs3119"/>Rs. 2098 to Rs. 3119</label>
+                <label> <input onchange="Rs3119toRsabove()" id="Rs3119toRsabove" type="checkbox" value="Rs3119toRsabove"/>Rs. 3119 and above</label>
                 
             </div>
         </div>
@@ -90,11 +62,11 @@
         <div id="discountrange">
             <div>DISCOUNT RANGE</div>
             <div>
-                <label> <input type="checkbox" value="10%&above"/>10% and above</label>
-                <label> <input type="checkbox" value="30%&above"/>30% and above</label>
-                <label> <input type="checkbox" value="50%&above"/>50% and above</label>
-                <label> <input type="checkbox" value="70%&above"/>70% and above</label>
-                <label> <input type="checkbox" value="80%&above"/>80% and above</label>
+                <label> <input onchange="above10()" id="above10" type="checkbox" value="above10"/>10% and above</label>
+                <label> <input onchange="above30()" id="above30" type="checkbox" value="above30"/>30% and above</label>
+                <label> <input onchange="above50()" id="above50" type="checkbox" value="above50"/>50% and above</label>
+                <label> <input onchange="above60()" id="above60" type="checkbox" value="above60"/>60% and above</label>
+                <label> <input onchange="above70()" id="above70" type="checkbox" value="above70"/>70% and above</label>
             </div>
         </div>
     </div>
@@ -153,3 +125,12 @@
 </html>
 <script src="./womens.js"></script>
 <script src="./filter.js"></script>
+<script src="./data.js"></script>
+1<script src="./wishlist.js"></script>
+
+
+
+
+
+
+

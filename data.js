@@ -1,23 +1,12 @@
-
-
-var womensData = [
-    {
-        img:" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16947966/2022/1/27/4cbf1e43-79ff-42d4-af54-d7ad7a6ccc391643272377504KALINIWomenMaroonAnarkaliKurta1.jpg",
-        type:"Kurta",
-        name:"Women Ethnic Motifs Printed Kurta",
-        brand:"Libas",
-        price: 999,
-        strikedoffprice:2499,
-        discount: 60,
-
-    },
+object:[
+    
     {
         img:" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2278228/2018/4/5/11522913267066-DressBerry-Women-Watches-7501522913266942-1.jpg",
         type:"watch",
         name:"Women Analouge",
         brand:"Daniel Klein",
         price: 989,
-        strikedoffprice:3099,
+        strikedoffprice:"3099",
         discount: 71,
 
     },
@@ -75,7 +64,7 @@ var womensData = [
         img:" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2974141/2020/4/30/e79296fd-8478-4c29-a32b-b07d5e72ac6d1588240924600PhilipsWomenKerashineSilkProCareHairStraightenerHP830206Blac1.jpg",
         type:"electonics",
         name:"HP8302 selfie Straightner",
-        brand:"philips",
+        brand:"Philips",
         price: 1152,
         strikedoffprice:"1295",
         discount: 11,
@@ -189,6 +178,16 @@ var womensData = [
         price: 699,
         strikedoffprice:"3999",
         discount: 33,
+
+    },
+    {
+        img:" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16947966/2022/1/27/4cbf1e43-79ff-42d4-af54-d7ad7a6ccc391643272377504KALINIWomenMaroonAnarkaliKurta1.jpg",
+        type:"Kurta",
+        name:"Women Ethnic Motifs Printed Kurta",
+        brand:"Libas",
+        price: 999,
+        strikedoffprice:"2499",
+        discount: 60,
 
     },
     {
@@ -463,7 +462,7 @@ var womensData = [
     },
     {
         img:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16977254/2022/1/29/982e8764-349e-4860-b687-87966c52da211643454490435Heels5.jpg ",
-        type:"footwear",
+        type:"Footwear",
         name:"Solid Block Heel Pumps",
         brand:"Puma",
         price: 599,
@@ -521,100 +520,4 @@ var womensData = [
         discount: 25,
 
     },
-
-];
-
-localStorage.setItem("womensDataa", JSON.stringify(womensData));
-
-var allWomenDeta = JSON.parse(localStorage.getItem("womensDataa")) || []
-
-function displayDataWomen(allWomenDeta){
-  document.querySelector("#products").innerHTML = ""
-allWomenDeta.map(function(elem)
-{
-    var maindiv=document.createElement("div")
-    var priceDiv=document.createElement("div")
-    priceDiv.setAttribute("class","priceDiv")
-    var div1=document.createElement("div")
-    var div2=document.createElement("div")
-    var div3=document.createElement("div")
-
-    var image=document.createElement("img")
-    image.setAttribute("src",elem.img)
-    image.addEventListener("click",function()
-    {
-        addtobag(elem)
-        window.location.href="http://127.0.0.1:5500/women/display_bag.html";
-       
-    })
-    
-    var brand=document.createElement("p")
-    brand.innerText=elem.brand
-
-    var name=document.createElement("p")
-    name.innerText=elem.name
-
-    var price = document.createElement("p")
-    price.innerText ="Rs."+elem.price
-
-    var strikeprice = document.createElement("p")
-    strikeprice.innerText = "Rs."+elem.strikedoffprice
-    strikeprice.style.textDecoration="line-through"
-    
-    var discount=document.createElement("p")
-    discount.innerText="("+elem.discount+"% OFF)" 
-
-   var btn = document.createElement("button")
-   btn.innerText = "WishList"
-   btn.setAttribute("class","wishlist-button");
-   btn.addEventListener("click", function () {
-    wishList(elem);
-  });
-   
-   var sizes=document.createElement("p")
-   sizes.innerText="Sizes: S M L XL XXL"
-
-   div1.append(price)
-   div2.append(strikeprice)
-   div3.append(discount)
-   priceDiv.append(div1,div2,div3)
-   maindiv.append(image,brand,name,priceDiv,btn,sizes)
-   document.querySelector("#products").append(maindiv)
-})
-}
-displayDataWomen(allWomenDeta)
-
-wishListItems = JSON.parse(localStorage.getItem("wishListData")) || []
-function wishList(elem) {
-    
-    var object1 = {
-      img:elem.img,
-      name: elem.name,
-      brand: elem.brand,
-      price:elem.price,
-      strikeprice:elem.strikeprice,
-      discount:elem.discount
-    };
-    wishListItems.push(object1);
-    window.location.reload();
-    localStorage.setItem("wishListData", JSON.stringify(wishListItems));
-  }
-
-
-var addtobagItems = JSON.parse(localStorage.getItem("addtobagData")) || []
-function addtobag(elem) {
-    
-    var object2 = {
-      img:elem.img,
-      name: elem.name,
-      brand: elem.brand,
-      price:elem.price,
-      strikeprice:elem.strikeprice,
-      discount:elem.discount
-    };
-    addtobagItems.push(object2);
-    window.location.reload();
-    localStorage.setItem("addtobagData", JSON.stringify(addtobagItems));
-  }
-  
- 
+]
