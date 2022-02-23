@@ -59,7 +59,7 @@ indianWereData = [
 },
 ];
 
-console.log(indianWereData)
+
 
 indianWereData.map(function (el, i,arr) {
 
