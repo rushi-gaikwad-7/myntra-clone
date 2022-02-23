@@ -13,13 +13,17 @@
     
     #products{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(5,1fr);
         grid-template-rows: auto;
         gap:25px;
         margin-top: 30px;
         padding:30px;
         text-align: center;
         
+    }
+    #photo{
+        width:220px;
+        height: 300px;
     }
     #filter{
         border:1px solid rgb(233, 225, 225);
@@ -43,12 +47,14 @@
         display: flex;
         gap:25px;
         margin-left: 8px;
+        margin-top: 10px;
+    
     }
     .priceDiv{
         display: flex;
         gap:10px;
         margin-top: -30px;
-        margin-left: 100px;
+        margin-left: 80px;
         
     }
     #tag{
@@ -56,14 +62,19 @@
         color: #535657;
         margin-top: -15px;
     }
+    #sortby{
+        block-size: 35px;
+        width:170px;
+        
+    }
 </style>
 </head>
 <body>
     <div id="parent">
     <div id="filter" >
-        <div id="filter-1" style="display: flex;justify-content: space-around;">
+        <div id="filter-1"style="display:flex; justify-content:space-around;">
             <div>FILTERS</div>
-            <div>CLEAR ALL</div>
+            <div style="color:red;">CLEAR ALL</div>
         </div>
         <div class="filters">
             <div>CATEGORIES</div>
