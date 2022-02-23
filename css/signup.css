@@ -1,0 +1,39 @@
+
+#signupDiv{
+    width: 30%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 3%;
+    padding-bottom: 60px;
+    
+}
+#form{
+    margin-top:10%;
+}
+#form>div{
+    padding: 0px 10px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom:40px;
+    border: 1px solid;
+    align-items: center;
+}
+p{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+p+input{
+    width: 60%;
+    height: 40px;
+    padding-left: 10px;
+    color: black;
+}
+#signupbtn{
+    width: 80%;
+    background-color: #ff3e6c;
+    color: white;
+    font-weight: bold;
+   margin-left: 40px;
+}
