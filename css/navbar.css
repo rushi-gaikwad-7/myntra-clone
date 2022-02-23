@@ -48,6 +48,12 @@ color: gray;
 #profile>a>i,#wishlist>a>i,#bag>a>i{
     color:gray;
 }
+img~a>div{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+}
 
 input {
     background-color: transparent;

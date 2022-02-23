@@ -24,6 +24,13 @@ p{
     font-size: 15px;
     font-weight: bold;
 }
+#form+p{
+    margin-top: 25px;
+    padding-left: 60px;
+}
+p>b{
+    color: #ff3e6c;
+}
 p+input{
     width: 60%;
     height: 40px;

@@ -4,18 +4,22 @@ body {
     background-color: #fdeef0;
 }
 #studioDiv{
-    width: 25%;
+   position:static;
+    width: 400px;
     border: 1px solid red;
     margin: auto;
     margin-top: 30px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
 
 }
 #studioBar{
+    height: 56px;
     padding:0px 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
-    position: sticky;
-    top: 0;
+    position:sticky;
+    top:100px;
     justify-content: space-between;
     align-items: center;
     margin: auto;
@@ -28,4 +32,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#adsDiv{
+    background-color: white;
+    border: 1px solid;
+}
+#adsDiv>img{
+    width: 98%;
+padding: 5px;
+}
+#postnav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#mainbox{
+    margin:20px 5px;
+}
+#dp{
+    width: 20%;
+    border-radius:50px;
+}
+#follow{
+    color: tomato;
 }
