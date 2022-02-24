@@ -1,10 +1,10 @@
-var wishListItems = JSON.parse(localStorage.getItem("wishListData")) || []
+var bagItems = JSON.parse(localStorage.getItem("bagData")) || []
 
 
 
-function showWishList(wishListItems) {
-  document.querySelector("#maindiv").innerHTML = ""
-  wishListItems.map(function(elem)
+function showbag(bagItems) {
+  document.querySelector("#bag").innerHTML = ""
+  bagItems.map(function(elem)
   {
     var maindiv=document.createElement("div")
     var priceDiv=document.createElement("div")
@@ -37,8 +37,8 @@ function showWishList(wishListItems) {
    div3.append(discount)
    priceDiv.append(div1,div2,div3)
    maindiv.append(image,brand,name,priceDiv)
-   document.querySelector("#maindiv").append(maindiv)
+   document.querySelector("#bag").append(maindiv)
   })
     
   }
-  showWishList(wishListItems)
+  showbag(bagItems)

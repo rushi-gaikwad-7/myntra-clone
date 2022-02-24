@@ -3,11 +3,16 @@
 var womensData = [
     {
         img:" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16947966/2022/1/27/4cbf1e43-79ff-42d4-af54-d7ad7a6ccc391643272377504KALINIWomenMaroonAnarkaliKurta1.jpg",
+        img1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/2b955c13-e12a-4f61-997f-050934dbe0a51643272377239KALINIWomenMaroonAnarkaliKurta2.jpg",
+        img2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/6f51128c-e73e-4b57-b351-e07359460e7f1643272377681KALINIWomenMaroonAnarkaliKurta3.jpg",
+        img3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/0e45987c-89d4-4fe4-a62f-12f7ac9f42561643272376982KALINIWomenMaroonAnarkaliKurta4.jpg",
+        img4:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/1bf40f6b-45fa-4e49-b49d-bbf28060a2491643272377099KALINIWomenMaroonAnarkaliKurta5.jpg",
+        img5:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/a44b6129-4faa-493c-95fc-b7a54d598bdf1643272377378KALINIWomenMaroonAnarkaliKurta6.jpg",
         type:"Kurta",
         name:"Women Ethnic Motifs Printed Kurta",
         brand:"Libas",
         price: 999,
-        strikedoffprice:2499,
+        strikeprice:2499,
         discount: 60,
 
     },
@@ -17,7 +22,7 @@ var womensData = [
         name:"Women Analouge",
         brand:"Daniel Klein",
         price: 989,
-        strikedoffprice:3099,
+        strikeprice:3099,
         discount: 71,
 
     },
@@ -27,7 +32,7 @@ var womensData = [
         name:"Printed Straight Kurta",
         brand:"Biba",
         price: 383,
-        strikedoffprice:"1198",
+        strikeprice:"1198",
         discount: 68,
 
     },
@@ -37,7 +42,7 @@ var womensData = [
         name:"Self Design fit and flare Dress",
         brand:"Libas",
         price: 1668,
-        strikedoffprice:"166",
+        strikeprice:"166",
         discount: 47,
 
     },
@@ -47,7 +52,7 @@ var womensData = [
         name:"Printed Straight Kurta",
         brand:"Biba",
         price: 526,
-        strikedoffprice:"1350",
+        strikeprice:"1350",
         discount: 61,
 
     },
@@ -57,7 +62,7 @@ var womensData = [
         name:"Eyeconic kajal-Deep Black",
         brand:"Lakme",
         price: 148,
-        strikedoffprice:"182",
+        strikeprice:"182",
         discount: 20,
 
     },
@@ -67,7 +72,7 @@ var womensData = [
         name:"Women Printed Cotton Kurta",
         brand:"Libas",
         price: 699,
-        strikedoffprice:"2799",
+        strikeprice:"2799",
         discount: 75,
 
     },
@@ -77,7 +82,7 @@ var womensData = [
         name:"HP8302 selfie Straightner",
         brand:"philips",
         price: 1152,
-        strikedoffprice:"1295",
+        strikeprice:"1295",
         discount: 11,
 
     },
@@ -87,7 +92,7 @@ var womensData = [
         name:"Yoke Design Kurta with Trouser",
         brand:"Biba",
         price: 1025,
-        strikedoffprice:"2699",
+        strikeprice:"2699",
         discount: 62,
 
     },
@@ -97,7 +102,7 @@ var womensData = [
         name:"Women Cotton Yoke Design Kurta",
         brand:"Libas",
         price: 2799,
-        strikedoffprice:"3350",
+        strikeprice:"3350",
         discount: 10,
 
     },
@@ -107,7 +112,7 @@ var womensData = [
         name:"Women Jogger Jeans",
         brand:"Libas",
         price: 799,
-        strikedoffprice:"1999",
+        strikeprice:"1999",
         discount: 60,
 
     },
@@ -117,7 +122,7 @@ var womensData = [
         name:"Chanderi Yoke Design Kurta Set",
         brand:"Kalini",
         price: 1979,
-        strikedoffprice:"5999",
+        strikeprice:"5999",
         discount: 67,
 
     },
@@ -127,7 +132,7 @@ var womensData = [
         name:"Floral",
         brand:"Biba",
         price: 1229,
-        strikedoffprice:"2459",
+        strikeprice:"2459",
         discount: 50,
 
     },
@@ -137,7 +142,7 @@ var womensData = [
         name:"Floral Leafy Foil Kurta Set",
         brand:"Kalini",
         price: 641,
-        strikedoffprice:"2468",
+        strikeprice:"2468",
         discount: 74,
 
     },
@@ -147,7 +152,7 @@ var womensData = [
         name:"Ethnic Print Kurta Set",
         brand:"Libas",
         price: 911,
-        strikedoffprice:"2399",
+        strikeprice:"2399",
         discount: 62,
 
     },
@@ -157,7 +162,7 @@ var womensData = [
         name:"Ninja Toauch To Wake SmartWatch",
         brand:"Fastrack",
         price: 1999,
-        strikedoffprice:"4999",
+        strikeprice:"4999",
         discount: 30,
 
     },
@@ -167,7 +172,7 @@ var womensData = [
         name:"Waterproof Hypercurl Mascara",
         brand:"Lakme",
         price: 259,
-        strikedoffprice:"399",
+        strikeprice:"399",
         discount: 35,
 
     },
@@ -177,7 +182,7 @@ var womensData = [
         name:"Women Wide Leg Jeans",
         brand:"Biba",
         price: 899,
-        strikedoffprice:"1999",
+        strikeprice:"1999",
         discount: 55,
 
     },
@@ -187,7 +192,7 @@ var womensData = [
         name:"Wireless Earphone",
         brand:"philips",
         price: 699,
-        strikedoffprice:"3999",
+        strikeprice:"3999",
         discount: 33,
 
     },
@@ -197,7 +202,7 @@ var womensData = [
         name:"Stripped Kurta with Palazzos & Duppatta",
         brand:"Kalini",
         price: 1259,
-        strikedoffprice:"2799",
+        strikeprice:"2799",
         discount: 55,
 
     },
@@ -207,7 +212,7 @@ var womensData = [
         name:"2nd Gen Airpods",
         brand:"Apple",
         price: 12909,
-        strikedoffprice:"14990",
+        strikeprice:"14990",
         discount: 12,
 
     },
@@ -217,7 +222,7 @@ var womensData = [
         name:"VS102 Vluetooth Headset",
         brand:"philips",
         price: 1299,
-        strikedoffprice:"2999",
+        strikeprice:"2999",
         discount: 17,
 
     },
@@ -227,7 +232,7 @@ var womensData = [
         name:"Zari Embroidered Kurta Set",
         brand:"Biba",
         price: 2099,
-        strikedoffprice:"6999",
+        strikeprice:"6999",
         discount: 70,
 
     },
@@ -237,7 +242,7 @@ var womensData = [
         name:"Women Lace Kurta",
         brand:"Kalini",
         price: 1529,
-        strikedoffprice:"1699",
+        strikeprice:"1699",
         discount: 10,
 
     },
@@ -247,7 +252,7 @@ var womensData = [
         name:"Unisex Solid Clogs",
         brand:"Nike",
         price: 2271,
-        strikedoffprice:"3495",
+        strikeprice:"3495",
         discount: 35,
 
     },
@@ -257,7 +262,7 @@ var womensData = [
         name:"Women Skinny Fit Crop Jeans",
         brand:"Nike",
         price: 1049,
-        strikedoffprice:"2099",
+        strikeprice:"2099",
         discount: 50,
 
     },
@@ -267,7 +272,7 @@ var womensData = [
         name:"Printed Kurta With Palazzo",
         brand:"Biba",
         price: 1298,
-        strikedoffprice:"2999",
+        strikeprice:"2999",
         discount: 57,
 
     },
@@ -277,7 +282,7 @@ var womensData = [
         name:"Women Printed Anarkali Kurta",
         brand:"Libas",
         price: 985,
-        strikedoffprice:"1699",
+        strikeprice:"1699",
         discount: 42,
 
     },
@@ -287,7 +292,7 @@ var womensData = [
         name:"NHP8100 Silky Shine Hair Dryer",
         brand:"Apple",
         price: 447,
-        strikedoffprice:"845",
+        strikeprice:"845",
         discount: 47,
 
     },
@@ -297,7 +302,7 @@ var womensData = [
         name:"Women Regular Wide track Pant",
         brand:"Nike",
         price: 689,
-        strikedoffprice:"1499",
+        strikeprice:"1499",
         discount: 54,
 
     },
@@ -307,7 +312,7 @@ var womensData = [
         name:"Women Analouge Watch",
         brand:"Fastrack",
         price: 2272,
-        strikedoffprice:"5050",
+        strikeprice:"5050",
         discount: 55,
 
     },
@@ -317,7 +322,7 @@ var womensData = [
         name:"Printed Kurta with Palazzo",
         brand:"Kalini",
         price: 1091,
-        strikedoffprice:"2799",
+        strikeprice:"2799",
         discount: 61,
 
     },
@@ -327,7 +332,7 @@ var womensData = [
         name:"Women Platinum Training Shoes",
         brand:"Puma",
         price: 2749,
-        strikedoffprice:"4999",
+        strikeprice:"4999",
         discount: 45,
 
     },
@@ -337,7 +342,7 @@ var womensData = [
         name:"Women Geometric Printed Kurta",
         brand:"Libas",
         price: 598,
-        strikedoffprice:"798",
+        strikeprice:"798",
         discount: 25,
 
     },
@@ -347,7 +352,7 @@ var womensData = [
         name:"Women Printed Kurta Set",
         brand:"Biba",
         price: 1039,
-        strikedoffprice:"3999",
+        strikeprice:"3999",
         discount: 74,
 
     },
@@ -357,7 +362,7 @@ var womensData = [
         name:"Ethnic Motifs A-Line Dress",
         brand:"Kalini",
         price: 1209,
-        strikedoffprice:"2199",
+        strikeprice:"2199",
         discount: 45,
 
     },
@@ -367,7 +372,7 @@ var womensData = [
         name:"Women Kurta with Palazo",
         brand:"Biba",
         price: 1349,
-        strikedoffprice:"2999",
+        strikeprice:"2999",
         discount: 55,
 
     },
@@ -377,7 +382,7 @@ var womensData = [
         name:"Women Kurta With Trouser",
         brand:"Libas",
         price: 1479,
-        strikedoffprice:"3699",
+        strikeprice:"3699",
         discount: 60,
 
     },
@@ -387,7 +392,7 @@ var womensData = [
         name:"Women Embroidered Kurta",
         brand:"Libas",
         price: 1619,
-        strikedoffprice:"4499",
+        strikeprice:"4499",
         discount: 64,
 
     },
@@ -397,7 +402,7 @@ var womensData = [
         name:"Women Skinny Fit Jeans",
         brand:"Nike",
         price: 947,
-        strikedoffprice:"1947",
+        strikeprice:"1947",
         discount: 50,
 
     },
@@ -407,7 +412,7 @@ var womensData = [
         name:"Mustard Marigold Kurta",
         brand:"Biba",
         price: 593,
-        strikedoffprice:"2199",
+        strikeprice:"2199",
         discount: 73,
 
     },
@@ -417,7 +422,7 @@ var womensData = [
         name:"Whiteglow Brightening Creme",
         brand:"Lakme",
         price: 292,
-        strikedoffprice:"390",
+        strikeprice:"390",
         discount: 25,
 
     },
@@ -427,7 +432,7 @@ var womensData = [
         name:"Floral Printed A-line Dress",
         brand:"Libas",
         price: 781,
-        strikedoffprice:"1699",
+        strikeprice:"1699",
         discount: 54,
 
     },
@@ -437,7 +442,7 @@ var womensData = [
         name:"Power Shoulder Tulip Heam Dress",
         brand:"Libas",
         price: 859,
-        strikedoffprice:"1999",
+        strikeprice:"1999",
         discount: 57,
 
     },
@@ -447,7 +452,7 @@ var womensData = [
         name:"Women Design Banarasi Silk Saree",
         brand:"Biba",
         price: 1391,
-        strikedoffprice:"4799",
+        strikeprice:"4799",
         discount: 71,
 
     },
@@ -457,7 +462,7 @@ var womensData = [
         name:"Floral Printed Saree",
         brand:"Libas",
         price: 1479,
-        strikedoffprice:"3699",
+        strikeprice:"3699",
         discount: 60,
 
     },
@@ -467,7 +472,7 @@ var womensData = [
         name:"Solid Block Heel Pumps",
         brand:"Puma",
         price: 599,
-        strikedoffprice:"999",
+        strikeprice:"999",
         discount: 40,
 
     },
@@ -477,7 +482,7 @@ var womensData = [
         name:"Women Solid Heeled Boots",
         brand:"Nike",
         price: 1099,
-        strikedoffprice:"4330",
+        strikeprice:"4330",
         discount: 68,
 
     },
@@ -487,7 +492,7 @@ var womensData = [
         name:"Women Walking Shoes",
         brand:"Fastrack",
         price: 1399,
-        strikedoffprice:"5999",
+        strikeprice:"5999",
         discount: 75,
 
     },
@@ -497,7 +502,7 @@ var womensData = [
         name:"Women Alpha Training Shoes",
         brand:"Puma",
         price: 2364,
-        strikedoffprice:"4299",
+        strikeprice:"4299",
         discount: 45,
 
     },
@@ -507,7 +512,7 @@ var womensData = [
         name:"Women Analouge Watch",
         brand:"Fastrack",
         price: 1500,
-        strikedoffprice:"3500",
+        strikeprice:"3500",
         discount: 60,
 
     },
@@ -517,7 +522,7 @@ var womensData = [
         name:"V-Neck Maxi Dress",
         brand:"Libas",
         price: 1798,
-        strikedoffprice:"2395",
+        strikeprice:"2395",
         discount: 25,
 
     },
@@ -533,6 +538,7 @@ function displayDataWomen(allWomenDeta){
 allWomenDeta.map(function(elem)
 {
     var maindiv=document.createElement("div")
+    maindiv.setAttribute("class","maindiv")
     var priceDiv=document.createElement("div")
     priceDiv.setAttribute("class","priceDiv")
     var div1=document.createElement("div")
@@ -543,11 +549,26 @@ allWomenDeta.map(function(elem)
     image.setAttribute("src",elem.img)
     image.addEventListener("click",function()
     {
-        addtobag(elem)
-        window.location.href="http://127.0.0.1:5500/women/display_bag.html";
-       
+        moreInfo(elem);
+        window.location.href = "display_bag.html";
     })
     
+    var image1=document.createElement("img")
+    image1.setAttribute("src",elem.img1)
+    
+    var image2=document.createElement("img")
+    image2.setAttribute("src",elem.img2)
+
+    var image3=document.createElement("img")
+    image3.setAttribute("src",elem.img3)
+
+    var image4=document.createElement("img")
+    image4.setAttribute("src",elem.img4)
+
+    var image5=document.createElement("img")
+    image5.setAttribute("src",elem.img5)
+
+
     var brand=document.createElement("p")
     brand.innerText=elem.brand
 
@@ -558,7 +579,7 @@ allWomenDeta.map(function(elem)
     price.innerText ="Rs."+elem.price
 
     var strikeprice = document.createElement("p")
-    strikeprice.innerText = "Rs."+elem.strikedoffprice
+    strikeprice.innerText = "Rs."+elem.strikeprice
     strikeprice.style.textDecoration="line-through"
     
     var discount=document.createElement("p")
@@ -584,7 +605,7 @@ allWomenDeta.map(function(elem)
 }
 displayDataWomen(allWomenDeta)
 
-wishListItems = JSON.parse(localStorage.getItem("wishListData")) || []
+//----------when-whishlist-button-button-press-items-store-in-wishlist-page---//
 function wishList(elem) {
     
     var object1 = {
@@ -596,25 +617,35 @@ function wishList(elem) {
       discount:elem.discount
     };
     wishListItems.push(object1);
-    window.location.reload();
     localStorage.setItem("wishListData", JSON.stringify(wishListItems));
   }
+  //----------wish-list-end---------------------------------------//
 
-
-var addtobagItems = JSON.parse(localStorage.getItem("addtobagData")) || []
-function addtobag(elem) {
-    
-    var object2 = {
-      img:elem.img,
-      name: elem.name,
-      brand: elem.brand,
-      price:elem.price,
-      strikeprice:elem.strikeprice,
-      discount:elem.discount
-    };
-    addtobagItems.push(object2);
-    window.location.reload();
-    localStorage.setItem("addtobagData", JSON.stringify(addtobagItems));
+  //--------------------display-item-discription-on-new-page-----------//
+  function moreInfo(elem)
+  {
+    wishData=[];
+    wishData.push(elem)
+    localStorage.setItem("addtobagData",JSON.stringify(wishData))
   }
-  
- 
+  //-------------------------end-------------------------------------//
+
+  //-----------navbar-element-bag----------------------//
+  var clickbag=document.querySelector("#bagtag") 
+  clickbag.addEventListener("click",function()
+  {
+      window.location.href="bag.html"
+  })
+  //------------------bag-end-----------------------------------//
+
+  //-------------navbar-wishlist-element--------------------------//
+  var clickwishlist=document.querySelector("#wishlisttag")
+  clickwishlist.addEventListener("click",function()
+  {
+      window.location.href="wishlist.html"
+  })
+
+
+
+
+
