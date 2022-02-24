@@ -2,16 +2,16 @@
 
 var MensData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg",
-    name: "Roadster ",
+    name: "HRX ",
     tags:"Men Cotton Pure Cotton",
-    price: 1549,
+    price: 549,
     strikedoffprice: 1799,
   },
   {
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16590968/2021/12/23/ef2521a7-c238-4cda-9d34-6ca7936aeac11640243292593RegularFitRound-neckT-shirt1.jpg",
     name: "Roadster",
     tags:"Men Cotton Pure Cotton",
-    price: 1459,
+    price: 459,
     strikedoffprice: 1235,
   },
   {
@@ -25,15 +25,15 @@ var MensData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16430352/2022/1/19/dd8e1cd9-3d30-4793-afeb-2fb83a066c541642586795859-U-S-Polo-Assn-Men-Teal-Brand-Logo-Printed-Polo-Collar-Pure-C-6.jpg",
     name: "Highlander",
     tags:"Men Cotton Pure Cotton",
-    price: 1249,
-    strikedoffprice: 1749,
+    price: 249,
+    strikedoffprice: 749,
   },
   {
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16430352/2022/1/19/dd8e1cd9-3d30-4793-afeb-2fb83a066c541642586795859-U-S-Polo-Assn-Men-Teal-Brand-Logo-Printed-Polo-Collar-Pure-C-6.jpg",
     name: "Highlander",
     tags:"Men Cotton Pure Cotton",
-    price: 1249,
-    strikedoffprice: 1749,
+    price: 249,
+    strikedoffprice: 749,
   },
   {
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9793513/2019/6/15/79e8a0aa-18f1-4752-98db-82968506e0491560580186960-Roadster-Men-White-Solid-Round-Neck-T-shirt-3471560580186273-1.jpg",
@@ -53,7 +53,7 @@ var MensData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16590968/2021/12/23/ef2521a7-c238-4cda-9d34-6ca7936aeac11640243292593RegularFitRound-neckT-shirt1.jpg",
     name: "Roadster",
     tags:"Men Cotton Pure Cotton",
-    price: 1459,
+    price: 459,
     strikedoffprice: 1235,
   },
   {
@@ -263,14 +263,14 @@ var MensData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14311832/2021/6/9/54495702-1699-4c62-98f2-17f17ee824361623221780997Mens100CottonSlimBlackTShirtTshirtsLouisPhilippeMenTshirtsLo1.jpg",
     name: "Highlander",
     tags:"Men Cotton Pure Cotton",
-    price: 1399,
-    strikedoffprice: 6599,
+    price: 599,
+    strikedoffprice: 1599,
   },
   {
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16590968/2021/12/23/ef2521a7-c238-4cda-9d34-6ca7936aeac11640243292593RegularFitRound-neckT-shirt1.jpg",
     name: "Roadster",
     tags:"Men Cotton Pure Cotton",
-    price: 1459,
+    price: 459,
     strikedoffprice: 1235,
   },
   {
@@ -305,7 +305,7 @@ var MensData = [{
     image_url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16590968/2021/12/23/ef2521a7-c238-4cda-9d34-6ca7936aeac11640243292593RegularFitRound-neckT-shirt1.jpg",
     name: "Roadster",
     tags:"Men Cotton Pure Cotton",
-    price: 1459,
+    price: 459,
     strikedoffprice: 1235,
   },
   {
