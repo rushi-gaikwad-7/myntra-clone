@@ -53,6 +53,8 @@ studioData = [
     box.setAttribute("id","mainbox")
     var navbar= document.createElement("div");
     navbar.setAttribute("id","postnav")
+    dpbox=document.createElement("div")
+    dpbox.setAttribute("id","dpbox")
     var dpimg = document.createElement("img");
     dpimg.setAttribute("id","dp")
     dpimg.setAttribute("src", el.pimg);
@@ -64,7 +66,8 @@ studioData = [
     follow.setAttribute("id","follow")
     var img = document.createElement("img");
     img.setAttribute("src", el.img);
-    navbar.append(dpimg,id,follow)
+    dpbox.append(dpimg)
+    navbar.append(dpbox,id,follow)
     box.append(navbar,img);
     document.querySelector("#postDiv").append(box);
     });

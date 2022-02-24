@@ -4,7 +4,6 @@ body {
     background-color: #fdeef0;
 }
 #studioDiv{
-   position:static;
     width: 400px;
     border: 1px solid red;
     margin: auto;
@@ -50,9 +49,17 @@ padding: 5px;
 #mainbox{
     margin:20px 5px;
 }
+#dpbox{
+    height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
 #dp{
-    width: 20%;
-    border-radius:50px;
+   width: 100%;
+   height: 100%;
+   border-radius: 50px;
 }
 #follow{
     color: tomato;
