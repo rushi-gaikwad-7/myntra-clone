@@ -1,7 +1,6 @@
 #hdiv{
     display: grid;
     grid-template-columns: 20% 78%;
-    border: 1px solid red;
 }
 #container1{
     border: 1px solid rgb(221, 218, 212);
@@ -18,7 +17,6 @@
 }
 #head{
    display: flex;
-   border: 1px solid red;
    gap: 10px;
    background-color: #FAFBFC;
    justify-content: center;
@@ -48,6 +46,11 @@ h3{
    align-items: center;
 }
 .priceDiv{
+<<<<<<< Updated upstream
    display: flex;
    justify-content: space-around;
+=======
+    display: flex;
+    justify-content: space-around;
+>>>>>>> Stashed changes
 }
