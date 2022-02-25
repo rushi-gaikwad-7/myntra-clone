@@ -14,7 +14,25 @@ var womensData = [
         price: 999,
         strikeprice:2499,
         discount: 60,
+        bestoffers:"This product is already at its best price",
+        description:"Women Maroon & Gold-Toned Ethnic Motifs Printed Flared Sleeves Gotta Patti Anarkali Kurta",
+         detail:"Colour: maroon and gold-toned ,Ethnic motifs printed V-neck ,Short, flared sleeves,Anarkali shape with angrakha style Gotta patti ,detail Ankle length with flared hem Machine weave regular viscose rayon",
+        Size:"The model (height 5'8) is wearing a size S",
+        MaterialCare:"Rayon Machine wash",
+        speccification:{SleeveLength:"Short Sleeves",
+        Shape:"Anarkali",
+        Neck:"V-Neck",
+        PrintPatternType:"Ethnic Motifs",
+        DesignStyling:"Angrakha",
+        Ornamentation:"Gotta Patti",
+        Length:"Ankle Length",
+        Hemline:"Flared",
+        ColourFamily:"Earthy",
+        ProductCode: 16947966,
+        Seller: "Jaipur Majestic Creation",
 
+
+        }
     },
     {
         img:" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2278228/2018/4/5/11522913267066-DressBerry-Women-Watches-7501522913266942-1.jpg",
@@ -568,7 +586,30 @@ allWomenDeta.map(function(elem)
     var image5=document.createElement("img")
     image5.setAttribute("src",elem.img5)
 
+    var description=document.createElement("P")
+    description.innerText=elem.description
 
+    var detail=document.createElement("p");
+     detail.innerText=elem.detail
+
+    var Size=document.createElement("p")
+    Size.innerText=elem.Size
+    
+    var MaterialCare=document.createElement("p")
+    MaterialCare.innerText=elem.MaterialCare
+
+    var speccification=document.createElement("p")
+    speccification.innerText=elem.speccification
+
+    var bestoffers=document.createElement("p")
+    bestoffers.innerText=elem.bestoffers
+
+    var ProductCode=document.createElement("p")
+    ProductCode.innerText=elem.ProductCode
+
+    var Seller=document.createElement("p")
+    Seller.innerText=elem.Seller
+    
     var brand=document.createElement("p")
     brand.innerText=elem.brand
 
@@ -605,9 +646,12 @@ allWomenDeta.map(function(elem)
 }
 displayDataWomen(allWomenDeta)
 
+
 //----------when-whishlist-button-button-press-items-store-in-wishlist-page---//
+
+
 function wishList(elem) {
-    
+  
     var object1 = {
       img:elem.img,
       name: elem.name,
@@ -615,8 +659,9 @@ function wishList(elem) {
       price:elem.price,
       strikeprice:elem.strikeprice,
       discount:elem.discount
-    };
+    }; 
     wishListItems.push(object1);
+    window.location.reload();
     localStorage.setItem("wishListData", JSON.stringify(wishListItems));
   }
   //----------wish-list-end---------------------------------------//
@@ -647,5 +692,6 @@ function wishList(elem) {
 
 
 
-
+  
+ 
 

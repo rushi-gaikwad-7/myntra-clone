@@ -38,7 +38,40 @@ function addtobagList(addtobag) {
 
     var image5=document.createElement("img")
     image5.setAttribute("src",elem.img5)
+    
+    var description=document.createElement("P")
+    description.innerText=elem.description
 
+    var detail=document.createElement("p");
+     detail.innerText=elem.detail
+
+    var Size=document.createElement("p")
+    Size.innerText=elem.Size
+    
+    var MaterialCare=document.createElement("p")
+    MaterialCare.innerText=elem.MaterialCare
+
+    var speccification=document.createElement("p")
+    speccification.innerText=elem.speccification.SleeveLength;
+    var speccification1=document.createElement("p")
+    speccification1.innerText=elem.speccification.Shape;
+    var speccification2=document.createElement("p")
+    speccification2.innerText=elem.speccification.Neck;
+    var speccification3=document.createElement("p")
+    speccification3.innerText=elem.speccification.PrintPatternType;
+    var speccification4=document.createElement("p")
+    speccification4.innerText=elem.speccification.DesignStyling
+    var speccification5=document.createElement("p")
+    speccification5.innerText=elem.speccification.Ornamentation
+    var speccification6=document.createElement("p")
+    speccification6.innerText=elem.speccification.Length
+    var speccification7=document.createElement("p")
+    speccification7.innerText=elem.speccification.Hemline
+    var speccification8=document.createElement("p")
+    speccification8.innerText=elem.speccification.ColourFamily
+    
+    var bestoffers=document.createElement("p")
+    bestoffers.innerText=elem.bestoffers
 
     var brand=document.createElement("p")
     brand.innerText=elem.brand
@@ -67,14 +100,17 @@ function addtobagList(addtobag) {
     wishlistButton.addEventListener("click", function () {
     wishList(elem);
   });
-   
+
+  var infodiv=document.createElement("div")
+  infodiv.append(bestoffers,detail,Size,MaterialCare,speccification,speccification1,speccification2,speccification3,speccification4,speccification5,speccification6,speccification7,speccification8)
+  
    imgDiv.append(image,image1,image2,image3,image4,image5,) 
    div1.append(price)
    div2.append(strikeprice)
    div3.append(discount)
    priceDiv.append(div1,div2,div3)
    buttonDiv.append(addBagButton,wishlistButton)
-   textdiv.append(brand,name,priceDiv,buttonDiv)
+   textdiv.append(brand,description,priceDiv,buttonDiv,infodiv)
    maindiv.append(imgDiv,textdiv)
    document.querySelector("#info").append(maindiv)
   })
@@ -82,6 +118,8 @@ function addtobagList(addtobag) {
   }
   addtobagList(addtobag)
 
+
+  //----------------add-to-wishlis-items--------------------//
   function wishList(elem) {
     
     var object1 = {
@@ -96,6 +134,8 @@ function addtobagList(addtobag) {
     localStorage.setItem("wishListData", JSON.stringify(wishListItems));
   }
 
+
+  //-----------------------------add-to-bag-items----------------------//
   function bag(elem) {
     
     var object2 = {
