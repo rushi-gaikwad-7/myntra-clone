@@ -47,3 +47,7 @@ h3{
    display: flex;
    align-items: center;
 }
+.priceDiv{
+   display: flex;
+   justify-content: space-around;
+}
