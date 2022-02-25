@@ -46,11 +46,6 @@ h3{
    align-items: center;
 }
 .priceDiv{
-<<<<<<< Updated upstream
    display: flex;
    justify-content: space-around;
-=======
-    display: flex;
-    justify-content: space-around;
->>>>>>> Stashed changes
 }
