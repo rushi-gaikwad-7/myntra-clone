@@ -22,7 +22,7 @@ font-size: 20px;
 }
 #inputDiv{
     display: flex;
-    border: 1px solid gray;
+  border: #e9e9ed solid 2px;
     width: 80%;
     height: 40px;
     margin: auto;
