@@ -53,7 +53,7 @@
    var total = cardData.reduce(function(acc,el){
        return acc+el.price*el.quntity
    },0)
-   document.querySelector("#total1").innerText = total
+   document.querySelector("#total1").innerText = cardData.length;
  }
  console.log(Total())
  Total()
@@ -62,7 +62,7 @@
    var total = cardData.reduce(function(acc,el){
        return acc+el.price*el.quntity
    },0)
-   document.querySelector("#total3").innerText = total
+   document.querySelector("#total3").innerText = total;
  }
  Total3()
  //-------------------total-price-after-promocode-------------//
@@ -70,7 +70,7 @@
    var total = cardData.reduce(function(acc,el){
        return acc+el.price*el.quntity
    },0)
-   document.querySelector("#total2").innerText = total
+   document.querySelector("#total2").innerText = total;
  }
  Total2()
  //--------------------------increase-item-from-bag-------------//
@@ -96,10 +96,10 @@
  apply()
  //--------------------promo-code-apply-----------------------//
  function apply(){
-   var total = document.getElementById("total1").innerText
+   var total = document.getElementById("total2").innerText
    var promo = document.getElementById("promo").value
    var discount =0
-   if(promo=="masai30"){
+   if(promo=="cool100"){
        discount=Number(total)*0.3
        document.getElementById("total2").innerText = Number(total)-Number(discount);
        discountprize()
@@ -110,9 +110,9 @@
    }
  }
  function discountprize(){
-   var total = document.getElementById("total1").innerText
+   var total= document.getElementById("total2").innerText
    var discount=(Number(total)*0.3)
- document.querySelector("#discount").innerText = discount
+ document.querySelector("#discount").innerText = Math.floor(discount)
  console.log(discount)
  }
  var apply11=document.getElementById("check")
