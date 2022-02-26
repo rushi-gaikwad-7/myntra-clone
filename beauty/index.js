@@ -286,8 +286,9 @@ products.map(function(elem,index,array){
     image.setAttribute("src",elem.imgage);
 
     var cart = document.createElement("button");
-    cart.innerText = "add to cart";
+    cart.innerText = "Wishlist";
     cart.style.textAlign = "center"
+    cart.setAttribute("class","wishlist-button")
     cart.addEventListener("click",function(){
        addToCart(elem);
     })
