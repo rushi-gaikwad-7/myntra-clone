@@ -17,23 +17,25 @@
      innerdiv3.setAttribute("id", "priceDiv")
      name.innerText = el.name;
      var price = document.createElement("p")
+     price.style.fontWeight="bold"
      price.innerText = "Price : " + el.price;
      var sprice = document.createElement("p")
      sprice.setAttribute("id", "sprice")
      sprice.innerText = el.strikeprice;
      sprice.style.textDecoration="line-through"
      var qty = document.createElement("p")
+     qty.style.color="grey"
      qty.innerText = "Quentity: "+ el.quntity;
      console.log("qty")
      var div=document.createElement("div")
      div.setAttribute("class","qnty")
-     var p1=document.createElement("p")
+     var p1=document.createElement("div")
      p1.innerText="+"
      p1.addEventListener("click",function()
      {
        sumofquntity(i);
      })
-     var p3=document.createElement("p")
+     var p3=document.createElement("div")
      p3.innerText="-"
      p3.addEventListener("click",function()
      {

@@ -100,7 +100,7 @@ p>b{
     padding: 0px 20px;
 }
 
-h3+div{
+#ti+div{
     display: flex;
     align-items: center;
     width: 55%;
@@ -124,9 +124,11 @@ h3+div{
     height: 95%;
     padding-right: 10px;
 }
+
 #priceDiv{
-    padding-top: -50px;
-    width: 50%;
+
+    margin-top: -10px;
+    width: 60%;
     height: 20px;
     display: flex;
     align-items: center;
@@ -154,7 +156,7 @@ h3+div{
 }
 #apply{
 border-bottom:1px solid #e9e9ed;
-width: 100%;
+width: 90%;
 height:50px;
 display: flex;
 align-items: center;
@@ -163,9 +165,13 @@ justify-content: space-between;
 }
 #apply>div:first-child{
     width: 40%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+}
+ #cart input{
+     height: 30px;
+    border:2px solid #e9e9ed;
+
 }
 #check{
     width: 30%;
@@ -275,4 +281,32 @@ span{
     font-size: 15px;
     font-weight: bolder;
 }
-
+#ti{
+    height: 35px;
+    width: 30%;
+    align-items: center;
+    display: flex;
+    padding: 0px 10px;
+    border:2px solid #e9e9ed;
+    border-radius: 50px;
+    background-color: mintcream;
+    justify-content: space-between;
+   
+}
+.qnty{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.qnty>div{
+   display: flex;
+   align-items: center;
+    width: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: whitesmoke;
+    justify-content: center;
+    border-radius:100px;
+    border:2px solid #e9e9ed;
+}

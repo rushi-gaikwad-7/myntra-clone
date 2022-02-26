@@ -46,11 +46,53 @@
     width: 40%;
     height: 50px;
 }
-
 #clr{
  
     color: gray;
 }
 #best{
     color: #ff3e6c;
+}
+.description{
+    font: 20px whitney,apple-system;
+    color: #535665;
+    padding-bottom:15px ;
+    border-bottom: 1px solid #535665 ;
+}
+.brand{
+    font: 24px whitney,apple-system;
+    color:#282c3f;
+}
+.line4{
+    color: #03A685;
+    font: 14px whitney,apple-system;
+}
+.size{
+    font:16px whitney,apple-system
+}
+.line6{
+    font: 16px whitney,apple-system;
+}
+.input1{
+    padding: 10px;
+    margin: 12px 0px;
+}
+.line7{
+    font: 16px whitney,apple-system;
+    margin: 8px 0px 0px;
+}
+.line8{
+    width: 170px;
+
+}
+.line9{
+    padding-top:10px;
+    font: 20px whitney,apple-system;
+}
+.line10{
+    padding-top:10px;
+    font: 20px whitney,apple-system;
+}
+p{
+    color: #282c3f;
 }
