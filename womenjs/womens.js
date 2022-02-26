@@ -2,7 +2,7 @@
 
 var womensData = [
     {
-        img:" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16947966/2022/1/27/4cbf1e43-79ff-42d4-af54-d7ad7a6ccc391643272377504KALINIWomenMaroonAnarkaliKurta1.jpg",
+        img:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/4cbf1e43-79ff-42d4-af54-d7ad7a6ccc391643272377504KALINIWomenMaroonAnarkaliKurta1.jpg",
         img1:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/2b955c13-e12a-4f61-997f-050934dbe0a51643272377239KALINIWomenMaroonAnarkaliKurta2.jpg",
         img2:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/6f51128c-e73e-4b57-b351-e07359460e7f1643272377681KALINIWomenMaroonAnarkaliKurta3.jpg",
         img3:"https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16947966/2022/1/27/0e45987c-89d4-4fe4-a62f-12f7ac9f42561643272376982KALINIWomenMaroonAnarkaliKurta4.jpg",
@@ -16,7 +16,7 @@ var womensData = [
         discount: 60,
         bestoffers:"This product is already at its best price",
         description:"Women Maroon & Gold-Toned Ethnic Motifs Printed Flared Sleeves Gotta Patti Anarkali Kurta",
-         detail:"Colour: maroon and gold-toned ,Ethnic motifs printed V-neck ,Short, flared sleeves,Anarkali shape with angrakha style Gotta patti ,detail Ankle length with flared hem Machine weave regular viscose rayon",
+        detail:"Colour: maroon and gold-toned",
         Size:"The model (height 5'8) is wearing a size S",
         MaterialCare:"Rayon Machine wash",
         speccification:{SleeveLength:"Short Sleeves",
@@ -30,8 +30,6 @@ var womensData = [
         ColourFamily:"Earthy",
         ProductCode: 16947966,
         Seller: "Jaipur Majestic Creation",
-
-
         }
     },
     {
@@ -553,16 +551,14 @@ var allWomenDeta = JSON.parse(localStorage.getItem("womensDataa")) || []
 
 function displayDataWomen(allWomenDeta){
   document.querySelector("#products").innerHTML = ""
-allWomenDeta.map(function(elem)
+   allWomenDeta.map(function(elem)
 {
     var maindiv=document.createElement("div")
     maindiv.setAttribute("class","maindiv")
-    var priceDiv=document.createElement("div")
-    priceDiv.setAttribute("class","priceDiv")
     var div1=document.createElement("div")
+    div1.setAttribute("class","priceDiv")
     var div2=document.createElement("div")
-    var div3=document.createElement("div")
-
+    div2.setAttribute("id","infoDiv")
     var image=document.createElement("img")
     image.setAttribute("src",elem.img)
     image.addEventListener("click",function()
@@ -570,54 +566,16 @@ allWomenDeta.map(function(elem)
         moreInfo(elem);
         window.location.href = "display_bag.html";
     })
-    
-    var image1=document.createElement("img")
-    image1.setAttribute("src",elem.img1)
-    
-    var image2=document.createElement("img")
-    image2.setAttribute("src",elem.img2)
-
-    var image3=document.createElement("img")
-    image3.setAttribute("src",elem.img3)
-
-    var image4=document.createElement("img")
-    image4.setAttribute("src",elem.img4)
-
-    var image5=document.createElement("img")
-    image5.setAttribute("src",elem.img5)
-
-    var description=document.createElement("P")
-    description.innerText=elem.description
-
-    var detail=document.createElement("p");
-     detail.innerText=elem.detail
-
-    var Size=document.createElement("p")
-    Size.innerText=elem.Size
-    
-    var MaterialCare=document.createElement("p")
-    MaterialCare.innerText=elem.MaterialCare
-
-    var speccification=document.createElement("p")
-    speccification.innerText=elem.speccification
-
-    var bestoffers=document.createElement("p")
-    bestoffers.innerText=elem.bestoffers
-
-    var ProductCode=document.createElement("p")
-    ProductCode.innerText=elem.ProductCode
-
-    var Seller=document.createElement("p")
-    Seller.innerText=elem.Seller
-    
-    var brand=document.createElement("p")
+    var brand=document.createElement("h3")
     brand.innerText=elem.brand
+    brand.style.fontWeight="bold"
 
     var name=document.createElement("p")
     name.innerText=elem.name
 
     var price = document.createElement("p")
     price.innerText ="Rs."+elem.price
+    price.style.fontWeight="bold"
 
     var strikeprice = document.createElement("p")
     strikeprice.innerText = "Rs."+elem.strikeprice
@@ -625,6 +583,7 @@ allWomenDeta.map(function(elem)
     
     var discount=document.createElement("p")
     discount.innerText="("+elem.discount+"% OFF)" 
+    discount.style.color="#de938e"
 
    var btn = document.createElement("button")
    btn.innerText = "WishList"
@@ -634,24 +593,20 @@ allWomenDeta.map(function(elem)
   });
    
    var sizes=document.createElement("p")
-   sizes.innerText="Sizes: S M L XL XXL"
+   sizes.innerText="Sizes : S  M  L  XL  XXL"
+   sizes.style.color="grey"
 
-   div1.append(price)
-   div2.append(strikeprice)
-   div3.append(discount)
-   priceDiv.append(div1,div2,div3)
-   maindiv.append(image,brand,name,priceDiv,btn,sizes)
+   div1.append(price,strikeprice,discount)
+  div2.append(brand,name,div1,btn,sizes)
+   maindiv.append(image,div2)
    document.querySelector("#products").append(maindiv)
 })
 }
 displayDataWomen(allWomenDeta)
 
-
 //----------when-whishlist-button-button-press-items-store-in-wishlist-page---//
-
-
 function wishList(elem) {
-  
+    
     var object1 = {
       img:elem.img,
       name: elem.name,
@@ -659,9 +614,8 @@ function wishList(elem) {
       price:elem.price,
       strikeprice:elem.strikeprice,
       discount:elem.discount
-    }; 
+    };
     wishListItems.push(object1);
-    window.location.reload();
     localStorage.setItem("wishListData", JSON.stringify(wishListItems));
   }
   //----------wish-list-end---------------------------------------//
@@ -692,6 +646,5 @@ function wishList(elem) {
 
 
 
-  
- 
+
 

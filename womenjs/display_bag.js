@@ -12,15 +12,13 @@ function addtobagList(addtobag) {
     var priceDiv=document.createElement("div")
     priceDiv.setAttribute("class","priceDiv")
     var div1=document.createElement("div")
-    var div2=document.createElement("div")
-    var div3=document.createElement("div")
+    div1.setAttribute("id","div1")
     var imgDiv=document.createElement("div")
     imgDiv.setAttribute("class","imgdiv")
     var textdiv=document.createElement("div")
     textdiv.setAttribute("class","textdiv")
     var buttonDiv=document.createElement("div")
     
-
     var image=document.createElement("img")
     image.setAttribute("src",elem.img)
 
@@ -44,6 +42,7 @@ function addtobagList(addtobag) {
 
     var detail=document.createElement("p");
      detail.innerText=elem.detail
+     detail.setAttribute("id","clr")
 
     var Size=document.createElement("p")
     Size.innerText=elem.Size
@@ -72,14 +71,16 @@ function addtobagList(addtobag) {
     
     var bestoffers=document.createElement("p")
     bestoffers.innerText=elem.bestoffers
+    bestoffers.setAttribute("id","best")
+    
 
-    var brand=document.createElement("p")
+    var brand=document.createElement("h1")
     brand.innerText=elem.brand
+    brand.style.fontWeight="bold"
 
-    var name=document.createElement("p")
-    name.innerText=elem.name
-
-    var price = document.createElement("p")
+    var name=document.createElement("p");
+    name.innerText=elem.name;
+    var price = document.createElement("h2")
     price.innerText ="Rs."+elem.price
 
     var strikeprice = document.createElement("p")
@@ -88,14 +89,18 @@ function addtobagList(addtobag) {
     
     var discount=document.createElement("p")
     discount.innerText="(" + elem.discount + "% OFF)" 
+    discount.style.color="#de938e"
 
     var addBagButton=document.createElement("button")
+    addBagButton.setAttribute("id","addbtn")
     addBagButton.innerText="ADD TO BAG";
     addBagButton.addEventListener("click", function () {
       bag(elem);
+      addToCart(elem);
     });
 
     var wishlistButton=document.createElement("button")
+    wishlistButton.setAttribute("id","wishbtn")
     wishlistButton.innerText="WISHLIST"
     wishlistButton.addEventListener("click", function () {
     wishList(elem);
@@ -105,12 +110,9 @@ function addtobagList(addtobag) {
   infodiv.append(bestoffers,detail,Size,MaterialCare,speccification,speccification1,speccification2,speccification3,speccification4,speccification5,speccification6,speccification7,speccification8)
   
    imgDiv.append(image,image1,image2,image3,image4,image5,) 
-   div1.append(price)
-   div2.append(strikeprice)
-   div3.append(discount)
-   priceDiv.append(div1,div2,div3)
+   div1.append(price,strikeprice,discount)
    buttonDiv.append(addBagButton,wishlistButton)
-   textdiv.append(brand,description,priceDiv,buttonDiv,infodiv)
+   textdiv.append(brand,description,div1,buttonDiv,infodiv)
    maindiv.append(imgDiv,textdiv)
    document.querySelector("#info").append(maindiv)
   })
@@ -149,3 +151,9 @@ function addtobagList(addtobag) {
     bagItems.push(object2);
     localStorage.setItem("bagData", JSON.stringify(bagItems));
   }
+
+  function addToCart(elem){
+    el.quntity=1;
+    cardData.push(elem);
+    localStorage.setItem("bagData",JSON.stringify(bagItems))
+}
