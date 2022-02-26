@@ -100,6 +100,9 @@ h4+p+p{
     align-items: center;
     background-color: whitesmoke;
 }
+#mode>div:hover{
+    background-color: white;
+}
 i{
     margin-right: 10px;
 }
