@@ -47,7 +47,8 @@
 }
 .priceDiv{
     display: flex;
-    justify-content: space-around;
+    margin-left: 40px;
+    gap: 10px;
 }
 
 /*---------Navbar----------------------*/
@@ -114,4 +115,7 @@ i{
 }
 #gap{
     margin-bottom: 15px;
+}
+#gap2{
+    gap: 4px;
 }
