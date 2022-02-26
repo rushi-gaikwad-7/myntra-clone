@@ -57,6 +57,9 @@ img~a>div{
 a:link{
     text-decoration: none;
 }
+a>div{
+    color: black;
+}
 
 input {
     background-color: transparent;
