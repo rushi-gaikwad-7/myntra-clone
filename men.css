@@ -10,6 +10,9 @@
    color: white;
     height: auto;
 }
+a:link{
+    text-decoration: none;
+}
 
 #navbar{
     background-color: white;
