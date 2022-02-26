@@ -25,7 +25,7 @@
      sprice.style.textDecoration="line-through"
      var qty = document.createElement("p")
      qty.style.color="grey"
-     qty.innerText = "Quentity: "+ el.quntity;
+     qty.innerText = "Quntity: "+ el.quntity;
      console.log("qty")
      var div=document.createElement("div")
      div.setAttribute("class","qnty")
@@ -56,6 +56,7 @@
        return acc+el.price*el.quntity
    },0)
    document.querySelector("#total1").innerText = cardData.length;
+   display(cardData)
  }
  console.log(Total())
  Total()
@@ -65,6 +66,7 @@
        return acc+el.price*el.quntity
    },0)
    document.querySelector("#total3").innerText = total;
+   display(cardData)
  }
  Total3()
  //-------------------total-price-after-promocode-------------//
@@ -73,6 +75,7 @@
        return acc+el.price*el.quntity
    },0)
    document.querySelector("#total2").innerText = total;
+   display(cardData)
  }
  Total2()
  //--------------------------increase-item-from-bag-------------//
@@ -110,12 +113,14 @@
            document.getElementById("total2").innerText=Number(total)
            Total2()
    }
+   display(cardData)
  }
  function discountprize(){
    var total= document.getElementById("total2").innerText
    var discount=(Number(total)*0.3)
  document.querySelector("#discount").innerText = Math.floor(discount)
  console.log(discount)
+ display(cardData)
  }
  var apply11=document.getElementById("check")
  apply11.addEventListener("click",function()
