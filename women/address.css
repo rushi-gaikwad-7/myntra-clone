@@ -143,7 +143,8 @@ h3+div{
 }
 #itemDiv{
     border: #e9e9ed 2px solid;
-    height: 200px;
+    height: 100px;
+    padding: 10px;
 }
 #total{
     color: gray;

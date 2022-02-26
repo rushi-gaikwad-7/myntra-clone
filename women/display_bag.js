@@ -97,8 +97,8 @@ function addtobagList(addtobag) {
     addBagButton.addEventListener("click", function () {
       bag(elem);
       addToCart(elem);
+      window.location.href ="bag.html";
     });
-
     var wishlistButton=document.createElement("button")
     wishlistButton.setAttribute("id","wishbtn")
     wishlistButton.innerText="WISHLIST"

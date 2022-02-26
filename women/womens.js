@@ -591,13 +591,12 @@ function displayDataWomen(allWomenDeta){
    btn.addEventListener("click", function () {
     wishList(elem);
   });
-   
    var sizes=document.createElement("p")
    sizes.innerText="Sizes : S  M  L  XL  XXL"
    sizes.style.color="grey"
 
    div1.append(price,strikeprice,discount)
-  div2.append(brand,name,div1,btn,sizes)
+  div2.append(btn,brand,name,div1,sizes)
    maindiv.append(image,div2)
    document.querySelector("#products").append(maindiv)
 })
