@@ -1,0 +1,56 @@
+#info>div{
+    display: flex;
+}
+.imgdiv{
+    width: 60%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto);
+    gap:10px
+}
+.imgdiv>img{
+    width: 100%;
+}
+.textdiv{
+    box-sizing: border-box;
+    width: 40%;
+    margin-left:20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+#div1{
+    display: flex;
+    width: 40%;
+    margin-top: -15px;
+    align-items: center;
+    justify-content: space-between;
+}
+#addbtn{
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+    background-color: #ff3e6c;
+    border: none;
+    width: 40%;
+    height: 50px;
+}
+#wishbtn{
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: black;
+    background-color:white;
+    border: 3px solid #e9e9ed;
+    width: 40%;
+    height: 50px;
+}
+
+#clr{
+ 
+    color: gray;
+}
+#best{
+    color: #ff3e6c;
+}
