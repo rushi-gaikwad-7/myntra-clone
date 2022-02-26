@@ -1,0 +1,249 @@
+
+#flatdiscount{
+    position: fixed;
+    right: 0px;
+    border: 1px solid;
+    display: flex;
+    transform: perspective(180deg);
+    align-items: center;
+   background-color: #535766 ;
+   color: white;
+    height: auto;
+}
+a:link{
+    text-decoration: none;
+}
+
+#navbar{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: bold;
+}
+#mainlogo{
+    width: 60px;
+    height:60px;
+    background-color: white;
+}
+#searchbar{
+    display: flex;
+    width: 40%;
+    background-color: #f5f5f6;
+    color: gray;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius:5px;
+    justify-content: space-between;
+}
+#searchbar:hover{
+    border: 0.5px solid;
+    background: white;
+}
+#sicon{
+    padding: 12px;
+}
+#profile,#wishlist,#bag{
+text-align: center;
+color: gray;
+}
+#profile>p,#wishlist>p,#bag>p{
+    margin-top: -0px;
+    font-size: 12px;
+    color: black;
+}
+input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 40px;
+    width: 90%;
+    color: #CCC;
+}
+textarea:focus,input:focus
+{
+    outline: none;
+}
+i{
+    font-size:20px;  
+}
+img{
+    width: 100%;
+}
+
+h1{
+    margin: 50px 25px;
+}
+#adDiv
+{
+   margin-top:50px;
+} 
+#dealsDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: auto;
+    gap: 2%;
+}
+#bigdealsDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#categoryDiv{
+  
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(1,auto);
+    column-gap: 2%;
+}
+#brandDiv{
+  
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(1,auto);
+    column-gap: 2%;
+}
+#categoryDiv>div,#brandDiv>div{
+    background-color:whitesmoke;
+}
+#luxeDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: auto;
+    gap: 2%;
+}
+#trendDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: auto;
+    gap: 2%;
+}
+#indianwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#sportwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#footwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#footwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#accessories{
+   
+    width:92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+
+#footer{
+    background-color: #f7f7f7;
+}
+
+#mainDiv {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    padding: 20px 20px;
+    background-color: #f7f7f7;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "D E F G"
+        "H H H H";
+}
+
+#d {
+    grid-area: D;
+}
+
+#e {
+    grid-area: E;
+}
+
+#f {
+    grid-area: F;
+}
+
+#g {
+    grid-area: G;
+}
+#mainDiv{
+    padding-top: 100px;
+}
+#footer>div>p:first-child {
+    font-weight: bold;
+}
+#footer>div{
+    margin-left: 50px;
+}
+#lastlogos{
+    display: flex;
+    width: 30%;
+    height: 50px;
+    align-items: center;
+   margin-top: -10px;
+    justify-content: space-around;
+}
+#lastlogos>p{
+    font-size: 15px;
+    text-decoration: underline;
+}
+.subdiv{
+    display: flex;
+
+}
+.subdiv>img{
+    width: 50px;
+}
