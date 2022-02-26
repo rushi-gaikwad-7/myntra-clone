@@ -25,25 +25,36 @@
     color: gray;
     text-align: center;
     box-sizing: border-box;
-    border-radius:8px;
+    border-radius:5px;
     justify-content: space-between;
 }
 #searchbar:hover{
-    border: 0.5px solid;
+    border: #e9e9ed solid 2px;
     background: white;
 }
 #sicon{
-    padding: 12px;
+    padding: 10px;
 }
 #profile,#wishlist,#bag{
 text-align: center;
 color: gray;
+
 }
 #profile>p,#wishlist>p,#bag>p{
     margin-top: -0px;
     font-size: 12px;
     color: black;
 }
+#profile>a>i,#wishlist>a>i,#bag>a>i{
+    color:gray;
+}
+img~a>div{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+}
+
 input {
     background-color: transparent;
     border: 0px solid;
