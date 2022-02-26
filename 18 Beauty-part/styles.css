@@ -1,51 +1,117 @@
-#hdiv{
+#parent{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+/* #parent2{
+    border: 1px solid rgb(236, 230, 230);
+} */
+
+.maindiv>img{
+    width:220px;
+    height: 300px;
+}
+#products{
+    
     display: grid;
-    grid-template-columns: 20% 78%;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: repeat(600px); */
+    gap:10px;
+    justify-content: space-evenly;
+    text-align: center;
+   
 }
-#container1{
-    border: 1px solid rgb(221, 218, 212);
-    justify-content: center;
+#filter{
+    width: 250px;
+
 }
-#container1>div{
-    border: 1px solid rgb(221, 218, 212);
-}
-#container2{
+#filter>div{
     display: grid;
-    grid-template-columns: repeat(4,250px);
-    gap: 10px;
-    justify-content: right;
-}
-#head{
-   display: flex;
-   gap: 10px;
-   background-color: #FAFBFC;
-   justify-content: center;
+    width:100%;
+    padding: 20px 0px 15px 25px;
+    border: 1px solid rgb(236, 230, 230);
+    
 }
 
-
-#div1{
-   width: 50%;
-   height: 900px;
-   border: 1px solid red;
-}
-#div2{
-   width: 30%;
-   height: 900px;
-   border: 2px solid black;
-   display: flex;
+#filter>div>div{
+    display: grid;
 }
 
-h3{
-   text-align: center;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
 }
-#table,thead,tr,td{
-   border: 1px solid blue;
-}
-#h7{
-   display: flex;
-   align-items: center;
+.navbarChild{
+    display: flex;
 }
 .priceDiv{
-   display: flex;
-   justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*---------Navbar----------------------*/
+
+#navbar{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: bold;
+
+}
+#mainlogo{
+    width: 60px;
+    height:60px;
+    background-color: white;
+}
+#searchbar{
+    display: flex;
+    width: 40%;
+    background-color: #f5f5f6;
+    color: gray;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius:5px;
+    justify-content: space-between;
+}
+#searchbar:hover{
+    border: 0.5px solid;
+    background: white;
+}
+#sicon{
+    padding: 12px;
+}
+#profile,#wishlist,#bag{
+text-align: center;
+color: gray;
+}
+#profile>p,#wishlist>p,#bag>p{
+    margin-top: -0px;
+    font-size: 12px;
+    color: black;
+}
+#input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 40px;
+    width: 90%;
+    color: #CCC;
+}
+textarea:focus,input:focus
+{
+    outline: none;
+}
+i{
+    font-size:20px;  
+}
+#gap{
+    margin-bottom: 15px;
 }
