@@ -38,6 +38,7 @@ function display(cardData){
     p1.addEventListener("click",function()
     {
       sumofquntity(i);
+      console.log("KUCH BHI ASE HEE")
       
     })
 
