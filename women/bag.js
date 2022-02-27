@@ -55,8 +55,13 @@
    var total = cardData.reduce(function(acc,el){
        return acc+el.price*el.quntity
    },0)
+
    document.querySelector("#total1").innerText = cardData.length;
    display(cardData)
+
+   document.querySelector("#total1").innerText = total
+   console.log("okkk")
+
  }
  console.log(Total())
  Total()
@@ -65,8 +70,13 @@
    var total = cardData.reduce(function(acc,el){
        return acc+el.price*el.quntity
    },0)
+
    document.querySelector("#total3").innerText = total;
    display(cardData)
+
+   document.querySelector("#total3").innerText = total
+   console.log("okkk")
+
  }
  Total3()
  //-------------------total-price-after-promocode-------------//
@@ -74,8 +84,13 @@
    var total = cardData.reduce(function(acc,el){
        return acc+el.price*el.quntity
    },0)
+
    document.querySelector("#total2").innerText = total;
    display(cardData)
+
+   document.querySelector("#total2").innerText = total
+   console.log("okkk")
+
  }
  Total2()
  //--------------------------increase-item-from-bag-------------//
