@@ -60,7 +60,7 @@
    document.querySelector("#total1").innerText = cardData.length;
    display(cardData)
 
-   document.querySelector("#total1").innerText = total
+   //document.querySelector("#total1").innerText = total
    console.log("okkk")
 
  }
