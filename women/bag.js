@@ -53,9 +53,9 @@
  display(cardData);
  //--------------------total-price------------//
  function Total(){
-   var total = cardData.reduce(function(acc,el){
-       return acc+el.price*el.quntity
-   },0)
+  //  var total = cardData.reduce(function(acc,el){
+  //      return acc+el.price*el.quntity
+  //  },0)
 
    document.querySelector("#total1").innerText = cardData.length;
    display(cardData)

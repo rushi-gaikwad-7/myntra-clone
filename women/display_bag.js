@@ -133,7 +133,7 @@ function addtobagList(addtobag) {
     addBagButton.setAttribute("id","addbtn")
     addBagButton.innerText="ADD TO BAG";
     addBagButton.addEventListener("click", function () {
-      bag(elem);
+      //bag(elem);
       addToCart(elem);
     });
 
@@ -177,22 +177,22 @@ function addtobagList(addtobag) {
 
 
   //-----------------------------add-to-bag-items----------------------//
-  function bag(elem) {
+  // function bag(elem) {
     
-    var object2 = {
-      img:elem.img,
-      name: elem.name,
-      brand: elem.brand,
-      price:elem.price,
-      strikeprice:elem.strikeprice,
-      discount:elem.discount
-    };
-    bagItems.push(object2);
-    localStorage.setItem("bagData", JSON.stringify(bagItems));
-  }
+  //   var object2 = {
+  //     img:elem.img,
+  //     name: elem.name,
+  //     brand: elem.brand,
+  //     price:elem.price,
+  //     strikeprice:elem.strikeprice,
+  //     discount:elem.discount
+  //   };
+  //   bagItems.push(object2);
+  //   localStorage.setItem("bagData", JSON.stringify(bagItems));
+  // }
 
   function addToCart(elem){
-    el.quntity=1;
-    cardData.push(elem);
+    elem.quntity=1;
+    bagItems.push(elem);
     localStorage.setItem("bagData",JSON.stringify(bagItems))
 }
