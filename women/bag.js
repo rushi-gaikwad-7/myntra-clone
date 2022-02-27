@@ -1,6 +1,7 @@
 
 
  var cardData = JSON.parse(localStorage.getItem("bagData")) || [];
+ console.log(cardData)
  function display(cardData){
       document.querySelector("#itemsBox").innerHTML="";
         cardData.map(function (el,i)
@@ -25,7 +26,7 @@
      sprice.style.textDecoration="line-through"
      var qty = document.createElement("p")
      qty.style.color="grey"
-     qty.innerText = "Quntity: "+ el.quntity;
+     qty.innerText = "Quentity: "+ el.quntity;
      console.log("qty")
      var div=document.createElement("div")
      div.setAttribute("class","qnty")
@@ -43,7 +44,7 @@
      })
      div.append(p1,p3)
      innerdiv1.append(img);
-     innerdiv2.append(name, innerdiv3,qty,div)
+     innerdiv2.append(name,innerdiv3,qty,div)
      innerdiv3.append(price, sprice)
      row.append(innerdiv1, innerdiv2);
      document.querySelector("#itemsBox").append(row);
