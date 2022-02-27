@@ -26,7 +26,7 @@
      sprice.style.textDecoration="line-through"
      var qty = document.createElement("p")
      qty.style.color="grey"
-     qty.innerText = "Quentity: "+ el.quntity;
+     qty.innerText = "Quantity: "+ el.quntity;
      console.log("qty")
      var div=document.createElement("div")
      div.setAttribute("class","qnty")
