@@ -17,7 +17,7 @@ function checkUser(event) {
     }
 
     if (flag == true) {
-        window.location.href = "index.html";
+    document.location.href="index.html"
     } else {
         alert("Invalid OTP")
     }
