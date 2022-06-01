@@ -44,12 +44,7 @@ A Collaborative project built by a team of 6 executed in 7 days.
 
 ![Logo](https://i.ibb.co/Jr8r35c/myntra3.png)
 
-
-**Products Page**
-
-![Logo](https://images2.imgbox.com/b1/79/Ajcc0vIR_o.jpg)
-
-**Products Details Page**
+**Products  Page**
 
 ![Logo](https://i.ibb.co/SRJvnBY/myntra1.png)
 
