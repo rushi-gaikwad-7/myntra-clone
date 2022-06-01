@@ -13,6 +13,7 @@ A Collaborative project built by a team of 6 executed in 7 days.
 
 - Deployed Link:- [Enjoy the Experience](https://effulgent-duckanoo-a89b0f.netlify.app/)
 
+## TO Run The Code Open index.html with Livw server in vs code
 
 ## Tech Stack 💻
 
