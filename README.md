@@ -11,7 +11,7 @@ A Collaborative project built by a team of 6 executed in 7 days.
 
 ## Demo  🎥
 
-- Deployed Link:- [Enjoy the Experience](https://effulgent-duckanoo-a89b0f.netlify.app/)
+- Deployed Link:- [Enjoy the Experience](https://clone-of-myntra.netlify.app/)
 
 ## TO Run The Code Open index.html with Livw server in vs code
 
