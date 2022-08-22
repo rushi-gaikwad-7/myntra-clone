@@ -56,10 +56,12 @@ A Collaborative project built by a team of 6 executed in 7 days.
 
 ## Contributors  😇
 
-
-- 👤 [TejaswiniMahale](https://github.com/TejaswiniMahale)
+- 👤 [Rushikesh Gaikwad](https://github.com/rushig777)
+- 👤 [Tejaswini Mahale](https://github.com/TejaswiniMahale)
 - 👤 [Akash kumar](https://github.com/akashk808443)
 - 👤 [Sumit patil](https://github.com/s198p)
+- 👤 [Mohd Elyas](https://github.com/MohdElyas19)
+- 👤 [shoaib patel](https://github.com/PatelShoaib7)
 
 
 
