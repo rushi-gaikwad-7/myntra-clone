@@ -63,5 +63,3 @@ A Collaborative project built by a team of 6 executed in 6 days.
 - 👤 [Mohd Elyas](https://github.com/MohdElyas19)
 - 👤 [shoaib patel](https://github.com/PatelShoaib7)
 
-
-
